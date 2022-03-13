@@ -1,3 +1,8 @@
+rcc - Create class component
+
+https://github.com/basir/react-shopping-cart
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWJaemxYYXROSkhCUWx1S3BTS29HaUtUUHU1d3xBQ3Jtc0treUlhdFcyMjVIbTRBajVpTGpCMnlCY1d5NmxTYUFMV0pjUzJHWGM5SDV4MDYyMzVsTlVfYmdMWmR0aFRkclJyc0pLLTJ0aDJudnp4RXZxMGJ5Smk0RzhmeDZZeC1hMnFFY1BFRi1pdXdkek1kaVRxRQ&q=https%3A%2F%2Fgithub.com%2Fbasir%2Freact-shopping-cart
+
 git push https://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@github.com/pmkent/react-redux-tutorial.git
 
 Git PAT - Personal Access Tokens
