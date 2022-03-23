@@ -1,3 +1,27 @@
+2022-3-23
+
+Checkout form done
+
+2:09:37 / 4:39:31
+https://www.youtube.com/watch?v=nKyrXWH5XLM&t=264s
+
+2022-3-22
+
+Checkout from
+1. Set Active Task Management spreadsheet
+2. Create checkout-form Git branch
+3. Cart.js
+4. Make cart items persistent
+5. Use LocalStorage on App constructor to load cart items (JSON.parse)
+6. User LocalStorage on addToCart to save cart items (JSON.state)
+7. Handle click on Process
+8. Update showCheckout state to true on click
+9. Conditional rendering checkout form
+10. Get Email, Name and Address required input
+11. Define handleInput function
+12. Add checkout button
+13. Handle onSubmit form event
+
 2022-3-20
 
 End of Cart functions
