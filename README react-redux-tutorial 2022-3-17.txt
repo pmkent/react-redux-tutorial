@@ -1,5 +1,7 @@
 2022-3-23
 
+npm install react-reveal
+
 Checkout form done
 
 2:09:37 / 4:39:31
