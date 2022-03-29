@@ -1,0 +1,206 @@
+2022-3-28
+
+Branch name (return to error)
+animation-modal
+
+2022-3-27
+
+npm i --save-dev @types/react-reveal
+
+Basir using
+npm i react@16.13.1
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+
+    "react-modal": "^3.14.4",
+
+2:57:02 / 4:39:31
+Part 10- Backend API (Node & MongoDB)
+#React #Redux #Tutorial
+
+POSTMAN Add Products
+2:53:42 / 4:39:31
+Part 10- Backend API (Node & MongoDB)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+115,118 viewsJul 13, 2020
+
+{
+    "image": "/images/dress7.jpg",
+    "title": "Dress 7 bad test",
+    "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+    "availableSized": [],
+    "price": 49.9,
+    "_id": "kFX5Jvp0i",
+    "__v": 0
+}
+
+Basir's package.json
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "nodemon": "^2.0.15",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-modal": "^3.14.4",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "5.0.0",
+    "shortid": "^2.2.16",
+    "web-vitals": "^2.1.4"
+  },
+
+$$
+
+npm run server
+Invalid schema configuration: `Generate` is not a valid type at path `_id`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+
+package.json
+  "scripts": {
+    "server": "nodemon server.js",
+
+npm install express body-parser mongoose shortid
+
+npm install nodemon
+
+2:33:52 / 4:39:31
+Part 10- Backend API (Node & MongoDB)
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+115,118 viewsJul 13, 2020
+
+10. Create Products Backend
+
+1. Install nodemon globally
+2. Add server.js
+3. Install express body-parser mongoose shortid
+4. Install MongoDB
+5. app = express()
+6. app.use(bodyParser.json())
+7. mongoose.connect()
+8. create Product model
+9. app.post("/api.produducts")
+10. Postman send post request
+11. route.get{"/api/products"}
+12. route.delete("/api/products/:id")
+
+11. Add Redux
+
+
+2022-3-25
+
+npm install react-modal
+2:17:54 / 4:39:31
+Part 09- Add Animations and Modals (React-Reveal)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+
+2022-3-24
+
+\dev\projects\tutorials\reactjs>npx create-react-app react-redux-tutorial
+
+  cd react-redux-tutorial
+  npm start
+
+https://www.youtube.com/watch?v=nKyrXWH5XLM&t=264s
+
+15.3.0
+npm install
+npm audit fix
+
+npm install react-reveal
+
+
+$$$$$$$$$$$$$
+
+Upto 2:17:16 all react-reveal Fade cascade! All not working
+
+Skip fade. ERROR
+2:11:31 / 4:39:31
+Part 09- Add Animations and Modals (React-Reveal)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+
+2022-3-23
+
+npm install react-reveal
+
+Checkout form done
+
+2:09:37 / 4:39:31
+https://www.youtube.com/watch?v=nKyrXWH5XLM&t=264s
+
+2022-3-22
+
+Checkout from
+1. Set Active Task Management spreadsheet
+2. Create checkout-form Git branch
+3. Cart.js
+4. Make cart items persistent
+5. Use LocalStorage on App constructor to load cart items (JSON.parse)
+6. User LocalStorage on addToCart to save cart items (JSON.state)
+7. Handle click on Process
+8. Update showCheckout state to true on click
+9. Conditional rendering checkout form
+10. Get Email, Name and Address required input
+11. Define handleInput function
+12. Add checkout button
+13. Handle onSubmit form event
+
+2022-3-20
+
+End of Cart functions
+1:49:20 / 4:39:31
+Part 07- Cart Component (State Management)
+
+2022-3-18
+
+Use rcc to create classes
+
+1. Set Active Task management spredsheet
+2. Create cart-component branch
+3. Product.js
+4. Handle 'Add to Cart' to this.props.addToCart(product)
+5. App.js
+6. Add cartItems to state as []
+7. Create addToCart(product)
+8. Slice, Check product existence, add to cartItems
+10. Define cartItems, order from this.props
+11. Check cartItems.length and show message
+12. List cartItems {cartItems.length > 0 && ()}
+13. index.css
+14. Style cart, cart-header, cart-items (img, li),
+15. Use LocalStorage on App constructor to load cart items (JSON.parse)
+16. Use LocalStorage on addToCart to save cart items (JSON.stringify)
+
+1:25:36 / 4:39:31
+Part 07- Cart Component (State Management)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+114,673 viewsJul 13, 2020
+https://www.youtube.com/watch?v=nKyrXWH5XLM&t=264s
+
+$$$$$$$$$$$$$$
+https://www.youtube.com/watch?v=nKyrXWH5XLM&t=264s
+
+4:28 / 4:39:31
+
+â€¢
+Part 01- What You Will Make
+
+
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+114,673 viewsJul 13, 2020
+
+Coding with Basir
+37K subscribers
+
+Build Shopping Cart By React & Redux For All Levels Developers
+ðŸ‘‰ Heroku Demo  : https://reactredux-shoppingcart.herok...
+ðŸ‘‰ AWS Demo       : https://reactcart.webacademy.pro/
+ðŸ‘‰ GitHub               : https://github.com/basir/react-shoppi...
+ðŸ‘‰ Questions         : https://webacademy.pro/reactcart
+ðŸ‘‰ Contact             : basir.jafarzadeh@gmail.com

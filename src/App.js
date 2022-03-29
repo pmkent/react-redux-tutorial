@@ -10,7 +10,6 @@ class App extends React.Component {
     this.state = {
       products: data.products,
       cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [],
-      // cartItems: [],
       size: '',
       sort: ''
     };
@@ -58,10 +57,8 @@ class App extends React.Component {
     }
   };
 
-  // sortProducts(event) {
   sortProducts = (event) => { // converto to method!
     const sort = event.target.value;
-    // console.log(event.target.value);
     this.setState((state) => ({
       sort: sort,
       products: this.state.products

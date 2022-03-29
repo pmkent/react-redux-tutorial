@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
-import Modal from 'react-modal/lib/components/Modal';
+// import Modal from '../modals/Modal';
+// import Modal from 'react-modal/lib/components/Modal';
 import formatCurrency from '../util'
-// import Fade from 'react-reveal/Fade';
-// import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import Modal from 'react-modal';
+
 
 export default class Products extends Component {
     constructor(props) {
@@ -13,49 +16,45 @@ export default class Products extends Component {
     }
     
     openModal = (product) => {
-        // console.log(product);
         this.setState({ product });
-    }
+    };
     closeModal = () => {
         this.setState({ product: null });
-    }
-    // const [isOpen, setIsOpen] = useState({open: false});
+    };
     render() {
-        // const [isOpen, setIsOpen] = useState(false);
-        // this.setState({ this.state.open: true })
         const { product } = this.state;
         return (
             <div>
-                {/* <Fade bottom cascade={true}> */}
-                <ul className='products'>
-                    {this.props.products.map(product => (
+                <Fade bottom cascade={true}>
+                    <ul className='products'>
+                        {this.props.products.map(product => (
 
-                        <li key={product._id}>
-                            <div className='product'>
-                                {/* <a href={'#' + product._id} onClick={() => setIsOpen(true)}> */}
-                                <a href={'#' + product._id} onClick={() => this.openModal(product)}>
-                                    <img src={product.image} alt={product.title}></img>
-                                    <p>{product.title}</p>
-                                </a>
-                                <div className='product-price'>
-                                    <div>{formatCurrency(product.price)}</div>
-                                    <button onClick={() => this.props.addToCart(product)} className='button primary'>Add To Cart</button>
+                            <li key={product._id}>
+                                <div className='product'>
+                                    {/* <a href={'#' + product._id}> */}
+                                    <a href={'#' + product._id} onClick={() => this.openModal(product)}>
+                                    {/* <a href={'#' + product._id}> */}
+                                        <img src={product.image} alt={product.title}></img>
+                                        <p>{product.title}</p>
+                                    </a>
+                                    <div className='product-price'>
+                                        <div>{formatCurrency(product.price)}</div>
+                                        <button onClick={() => this.props.addToCart(product)} className='button primary'>Add To Cart</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-
-                {/* </Fade> */}
+                            </li>
+                        ))}
+                    </ul>
+                </Fade>
 
                 {
-                    product && <Modal>
-                        {/* <Zoom> */}
+                    product && <Modal isOpen={true} onRequestClose={this.closeModal}>
+                        <Zoom>
                             <div>
-                                <button>x</button>
+                                <button className='close-modal' onClick={this.closeModal}>x</button>
                                 <div className='product-details'>
-                                    <img src={product.image} alt={product.title} />
-                                    <div className='product-detail-desc'>
+                                    <img src={product.image} alt={product.title}></img>
+                                    <div className='product-details-desc'>
                                         <p><strong>{product.title}</strong></p>
                                         <p>{product.description}</p>
                                         <p>
@@ -76,7 +75,7 @@ export default class Products extends Component {
                                     </div>
                                 </div>
                             </div>
-                        {/* </Zoom> */}
+                        </Zoom>
                     </Modal>
                 }
 
