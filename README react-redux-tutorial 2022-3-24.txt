@@ -1,3 +1,32 @@
+2022-3-30
+
+hanging in the index.js file, the value of <React.StrictMode> to <React.Fragment>
+
+WORKED (showed dress list from MongoDB first time ever!)
+npm install cors
+https://expressjs.com/en/resources/middleware/cors.html
+
+2022-3-29
+
+Part II
+Add Redux To Product List
+1. What is Redux (diagram)
+2. Update tast on spreadsheet
+3. Create branch add-redux-products
+4. npm install redux react-redux redux-thunk
+5. import redux
+6. Set initial state
+7. Create types
+8. types.js
+9. define FETCH_PRODUCTS
+10. actions/productActions.js
+11. declare fetchProducts
+12. create reducers
+13. reducers/productReducers.js
+14. define case FETCH_PRODUCTS
+15. create store
+16. store.js
+
 2022-3-28
 
 Branch name (return to error)

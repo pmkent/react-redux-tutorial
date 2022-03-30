@@ -23,3 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 doc/json/products_mongodb.json
 package-lock.json
+README react-redux-tutorial 2022-3-24.txt
