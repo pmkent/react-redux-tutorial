@@ -28,7 +28,7 @@ class Filter extends Component {
                             }
                             // onChange={this.props.sortProducts}
                         >
-                            <option value=''>Latest</option>
+                            <option value='latest'>Latest</option>
                             <option value='lowest'>Lowest</option>
                             <option value='highest'>Highest</option>
                         </select>

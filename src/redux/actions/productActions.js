@@ -32,18 +32,18 @@ export const filterProducts = (products, size) => (dispatch) => {
 
 export const sortProducts = (filteredProducts, sort) => (dispatch) => {
     const sortedProducts = filteredProducts.slice();
-    if (sort === '') {
-        sortProducts.sort((a,b) => (a._id > b._id ? 1 : -1));
+    if (sort === 'latest') {
+        sortedProducts.sort((a,b) => (a._id > b._id ? 1 : -1));
     } else {
-        sortedProducts.sort((a,b) => (
+        sortedProducts.sort((a,b) => //(
             sort === 'lowest' ?
                 a.price > b.price ? 1 : -1
                 :
                 // a.price < b.price ? -1 : 1
                 a.price > b.price ? -1 : 1
-        ))
+        );
     }
-    console.log(sortedProducts);
+    // console.log(sortedProducts);
     dispatch({
         type: ORDER_PRODUCTS_BY_PRICE,
         payload: {

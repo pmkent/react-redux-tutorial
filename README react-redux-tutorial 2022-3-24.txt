@@ -1,3 +1,13 @@
+2022-4-01
+
+3:46:55 / 4:39:31
+Part 12- Add Redux To Filter Bar (Redux)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+115,621 viewsJul 13, 2020
+Coding with Basir
+37.6K subscribers
+
 2022-3-31
 
 https://github.com/basir
