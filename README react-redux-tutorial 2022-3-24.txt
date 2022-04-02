@@ -1,4 +1,51 @@
+2022-4-01
+
+3:46:55 / 4:39:31
+Part 12- Add Redux To Filter Bar (Redux)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+115,621 viewsJul 13, 2020
+Coding with Basir
+37.6K subscribers
+
+2022-3-31
+
+https://github.com/basir
+
+https://www.youtube.com/watch?v=nKyrXWH5XLM&t=264s
+3:42:59 / 4:39:31
+Part 12- Add Redux To Filter Bar (Redux)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+115,574 viewsJul 13, 2020
+
 2022-3-30
+
+Part 12: Add Redux to Filter Bar
+1. Update task and branch
+2. types.js
+3. Create FILTER_PRODUCTS_BY_SIZE
+4. Create ORDER_PRODUCTS_BY_PRICE
+5. actions/productActions.js
+6. Create filterProducts
+7. Move app.js filterProducts logic here
+8. Create sortProducts
+9. Move app.js filterProducts logic here
+10. reducers/productReducers.js
+11. Case FILTER_PRODUCTS_BY_SIZE
+12. Case FILTER_PRODUCTS_BY_PRICE
+13. Filter.js
+14. Connect props: size, sort, items and filteredItems
+15. Connect actions: filterProducts and sortProducts
+16. Show loading if no filteredProducts??
+17. App.js
+18. Remove Filter props
+19. Check result
+20. Update task and branch
+
+Part 13: Add Redux to Cart
+
+$$
 
 hanging in the index.js file, the value of <React.StrictMode> to <React.Fragment>
 

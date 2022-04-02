@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import { fetchProducts } from '../redux/actions/productActions';
 
 class Products extends Component {
-// export default class Products extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -96,6 +95,9 @@ class Products extends Component {
   }
 }
 
-export default connect((state) => ({products: state.products.items}), {
+export default connect((state) => ({
+    products: state.products.filteredItems
+}), {
     fetchProducts,
+    // addToCart,
 })(Products);
