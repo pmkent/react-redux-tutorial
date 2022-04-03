@@ -3,11 +3,7 @@ import { connect } from 'react-redux';
 import { filterProducts, sortProducts } from '../redux/actions/productActions';
 
 class Filter extends Component {
-// export default class Filter extends Component {
-    // componentDidMount() {
-    //     this.props.filterProducts();
-    //     this.props.sortProducts();
-    // }
+
     render() {
         return (
             !this.props.filteredProducts ? (
@@ -15,7 +11,6 @@ class Filter extends Component {
             ) : (            
                 <div className='filter'>
                     <div className='filter-results'>{this.props.filteredProducts.length} Products</div>
-                    {/* <div className='filter-results'>{this.props.count} Products</div> */}
                     <div className='filter-sort'>
                         Order {' '}
                         <select
@@ -26,9 +21,8 @@ class Filter extends Component {
                                     e.target.value
                                 )
                             }
-                            // onChange={this.props.sortProducts}
                         >
-                            <option value='latest'>Latest</option>
+                            <option value=''>Latest</option>
                             <option value='lowest'>Lowest</option>
                             <option value='highest'>Highest</option>
                         </select>
@@ -43,7 +37,6 @@ class Filter extends Component {
                                     e.target.value
                                 )
                             }
-                            // onChange={this.props.filterProducts}
                         >
                             <option value=''>All</option>
                             <option value='XS'>XS</option>
@@ -62,12 +55,14 @@ class Filter extends Component {
     }
 }
 
-export default connect((state => ({
-    size: state.products.size,
-    sort: state.products.sort,
-    products: state.products.items,
-    filteredProducts: state.products.filteredItems,
-})), {
-    filterProducts,
-    sortProducts,
-}) (Filter);
+export default connect(
+    (state) => ({
+        size: state.products.size,
+        sort: state.products.sort,
+        products: state.products.items,
+        filteredProducts: state.products.filteredItems,
+    }), {
+        filterProducts,
+        sortProducts,
+    }
+) (Filter);
