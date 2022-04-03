@@ -1,5 +1,30 @@
 2022-4-01
 
+3:49:20 - 13. Add Recux Cart:
+1. Update task and branch
+2. type.js
+3. Create ADD_TO_CART
+4. Create REMOVE_FROM_CART
+5. actions/cartActions.js
+6. Create addToCart
+7. Create removeFromCart
+8. reducers/cartReducers.js
+9. case ADD_TO_CART
+10. case REMOVE_FROM_CART
+11. Cart.js
+12. connect props: cartItems
+13. connect actions: removeFromCart
+14. Product.js
+15. add action addToCart
+16. App.js
+17. Remove Cart props
+18. store.js
+19. Set initial cartItems to localStorage
+20. Check result
+21. Update task and branch
+
+14. Create Order:
+
 3:46:55 / 4:39:31
 Part 12- Add Redux To Filter Bar (Redux)
 #React #Redux #Tutorial

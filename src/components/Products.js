@@ -5,6 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 import Modal from 'react-modal';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../redux/actions/productActions';
+import { addToCart } from '../redux/actions/cartActions';
 
 class Products extends Component {
     constructor(props) {
@@ -34,14 +35,10 @@ class Products extends Component {
                             <div>Loading</div>
                         ) : (
                             <ul className='products'>
-                                {this.props.products.map(product => (
-                                // {this.props.products.map(product => (
-        
+                                {this.props.products.map((product) => (
                                     <li key={product._id}>
                                         <div className='product'>
-                                            {/* <a href={'#' + product._id}> */}
                                             <a href={'#' + product._id} onClick={() => this.openModal(product)}>
-                                            {/* <a href={'#' + product._id}> */}
                                                 <img src={product.image} alt={product.title}></img>
                                                 <p>{product.title}</p>
                                             </a>
@@ -99,5 +96,5 @@ export default connect((state) => ({
     products: state.products.filteredItems
 }), {
     fetchProducts,
-    // addToCart,
+    addToCart
 })(Products);
