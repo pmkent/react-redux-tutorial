@@ -77,13 +77,14 @@ class Cart extends Component {
                                    </li>
                                    <li>
                                        <div>Total: </div>
-                                       <div>{order.total}</div>
-                                       {/* <div>{formatCurrency(order.total)}</div> */}
+                                       {/* <div>{order.total}</div> */}
+                                       <div>{formatCurrency(order.total)}</div>
                                    </li>
                                    <li>
                                        <div>Cart Items: </div>
-                                       <div>
-                                           {/* {
+                                       {/* <div> */}
+                                       <div key={order._id}>
+                                           {
                                             order.cartItems.map(
                                                 (x) => (
                                                     <div>
@@ -91,7 +92,7 @@ class Cart extends Component {
                                                     </div>
                                                 )
                                             )
-                                           } */}
+                                           }
                                         </div>
                                    </li>
                                </ul>
