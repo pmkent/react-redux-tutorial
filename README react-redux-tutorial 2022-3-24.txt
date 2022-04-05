@@ -1,3 +1,39 @@
+2022-4-02
+
+4:09:43 / 4:39:31
+Part 14- Create Order (Fetch API)
+#React #Redux #Tutorial
+React & Redux Tutorial - Full Shopping Cart in 4 Hours [2020]
+115,621 viewsJul 13, 2020
+Coding with Basir
+37.6K subscribers
+
+Part 13: Create Order
+1. Backend
+2. server.js
+3. crete order modal
+4. GET /api/orders
+5. POST /api/orders
+6. DELETE /api/order/:id
+7. Front-end
+8. create types
+9. types.js
+10. CLEAR_ORDER, CLEAR_CART, CREATE_ORDER
+11. Create actions
+12. actions/orderActions.js
+13. createOrder(order)
+14. clearOrder()
+15. create reducers
+16. reducers/orderReducers.js
+17. Case CREATE_ORDER
+18. Case CLEAR_ORDER
+19. Update Cart component
+20. components/Cart.js
+21. Connect order, createOrder, clearOrder
+22. form onSubmit={this.createOrder}
+23. createOrder() this.props.createOrder(order)
+24. closeModal() this.props.clearOrder()
+
 2022-4-01
 
 3:49:20 - 13. Add Recux Cart:

@@ -52,9 +52,7 @@ class Products extends Component {
                             </ul>
                         )
                     }
-
                 </Fade>
-
                 {
                     product && <Modal isOpen={true} onRequestClose={this.closeModal}>
                         <Zoom>
@@ -86,7 +84,6 @@ class Products extends Component {
                         </Zoom>
                     </Modal>
                 }
-
             </div>
         )
   }

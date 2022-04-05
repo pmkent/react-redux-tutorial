@@ -48,9 +48,7 @@ class Filter extends Component {
                         </select>
                     </div>
                 </div>
-
             )
-
         )
     }
 }
